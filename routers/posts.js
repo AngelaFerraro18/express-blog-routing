@@ -1,12 +1,16 @@
 //importo express
 const express = require('express');
 
+//importo l'array con i post
+const posts = require('../data/posts.js');
+
 //salvo in una variabile il valore della classe di oggetti di express
 const router = express.Router();
 
 //index
 router.get('/', (req, res) =>{
-    res.send('Lista dei post');
+    //la risposta sarà la lista dei post in json 
+    res.json(posts);
 })
 
 //show
