@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AngelaFerraro18/express-blog-routing/issues"
   },
-  "homepage": "https://github.com/AngelaFerraro18/express-blog-routing#readme"
+  "homepage": "https://github.com/AngelaFerraro18/express-blog-routing#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
