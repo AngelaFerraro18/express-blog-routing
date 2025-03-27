@@ -17,13 +17,9 @@ router.get('/', (req, res) => {
 router.get('/:slug', (req, res) => {
     let element = req.params.slug;
     //non essendo presente un id faccio riferimento allo slug presente
-    let post = posts.find(post => {
-        if (element === post.slug) {
-            return post;
-        }
-    })
+    let currentPost = posts.find(post => element === post.slug);
     //la risposta sarà il singolo oggetto (il post singolo che verrà visualizzato) convertito in json
-    res.json(post);
+    res.json(currentPost);
 })
 
 //store
